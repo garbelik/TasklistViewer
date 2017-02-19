@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8"
+            fx:controller="com.garbelik.controller.MemoryUsageStatisticsController">
+    <BarChart prefHeight="450.0" prefWidth="620.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+              AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" fx:id="barChart"
+              title="Memory Usage Statistics">
+        <xAxis>
+            <CategoryAxis side="BOTTOM" fx:id="xAxis"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis side="LEFT"/>
+        </yAxis>
+    </BarChart>
+</AnchorPane>

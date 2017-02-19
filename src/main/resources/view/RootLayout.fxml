@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.garbelik.controller.RootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu mnemonicParsing="false" text="File">
+                <MenuItem mnemonicParsing="false" onAction="#Reimport" text="Re-import..." />
+                <MenuItem mnemonicParsing="false" onAction="#Export" text="Export to XML..." />
+                <MenuItem mnemonicParsing="false" onAction="#XlsExport" text="Export to XLS..." />
+                <MenuItem mnemonicParsing="false" onAction="#Exit" text="Exit" />
+            </Menu>
+            <Menu mnemonicParsing="false" text="Statistics">
+                <MenuItem mnemonicParsing="false" onAction="#memoryStatistics" text="Show Memory Usage" />
+            </Menu>
+        </MenuBar>
+    </top>
+</BorderPane>
